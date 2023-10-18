@@ -46,8 +46,19 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+      "P P P P X X X X"
+      "P P P P X X X X"
+      "P P P P X X X X"
+      "P P P P X X X X";
+    }
+
+    .item3 {
+      grid-column: P-start / P-end;
+      grid-row: X-end;
     }
   </style>
+
 </body>
 
 </html>
